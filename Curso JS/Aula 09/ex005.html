@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgba(21, 153, 4, 0.877);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Iniciando os estudos: DOM.</h1>
+    <p> Aqui vai o resultado </p>
+    <p> Aprendendo a usar o <strong>DOM</strong> com JavaScript.</p>
+    <div id = "msg">Clique em mim.</div>
+
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]
+        var d = document.getElementById('msg')
+        var m = document.getElementsByName('msg')[0]
+
+
+        /* Aqui estamos utilizando MARCA; 
+
+        document.write("Está escrito assim: " + p1.innerText)
+        p1.style.color = 'Blue'
+        corpo.style.background = 'red'
+        alert(p1.innerHTML) 
+
+        */ 
+
+        /* Aqui Estamos utilizando ID;
+        d.style.background = 'Blue'
+        d.innerText = 'Estou aguardando...'
+        */
+
+        /* Aqui está usando NAME; 
+        m.innerText = 'Olá!!'
+        */
+
+        var clase = document.querySelector('div#msg')
+        clase.style.color = 'red'
+        clase.style.background = 'White'
+        
+    </script>
+
+</body>
+</html>
