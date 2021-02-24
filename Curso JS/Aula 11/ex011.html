@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incrementando condições. (ex009)</title>
+</head>
+<body>
+    <h1>Qual o seu pais?</h1>
+    Você é natural de onde? <input type="text" name="paisorigem" id="paisorigem">
+    <input type="button" value="Confirmar" onclick="Confirmar()">
+    <div id="res"></div>
+    <script>
+
+        function Confirmar() {         
+            var pais = document.querySelector('input#paisorigem').value
+            var res = document.querySelector('div#res')
+            var pais = pais.toLocaleUpperCase() // linha extra adicionada para deixar o código mais robusto :D
+            res.innerHTML = `<p>Você é do/da: ${pais}.</p>`
+            if (pais == 'BRASIL') {
+                res.innerHTML += `Você é brasileiro!`
+            } else {
+                res.innerHTML += `Você é estrangeiro!`
+            }
+        }
+        // exercicio de prática proposto durante a aula 11. Concluido XD
+    </script>
+    
+</body>
+</html>
