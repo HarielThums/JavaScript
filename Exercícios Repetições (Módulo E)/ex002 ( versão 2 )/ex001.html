@@ -6,27 +6,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ex001 ( Parte 01 )</title>
+    <title>ex001 ( Parte 06 )</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do dia!</h1>
+        <h1>Tabuada</h1>
     </header>
 
     <section>
-
-        <div id="msg">
-            Aqui vai aparecer a mensagem...
+        <div>
+            <p>Numero: <input type="number" name="valor" id="valor">
+            <input type="button" value="Gerar Tabuada" onclick="calcular()"></p>
         </div>
-        <div id="foto">
-            <img id="imagem" src="manha.png" alt="">
+        
+        <div id="res">
+            <p>Aguardando número! </p>
         </div>
-
+       
     </section>
 
     <footer>
-        <p>&copy; Hariel Thums.</p>
+        <p>&copy; Hariel Thums!</p>
     </footer>
     <script src="script.js"></script>
 </body>
