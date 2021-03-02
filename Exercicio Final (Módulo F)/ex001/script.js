@@ -1,4 +1,4 @@
-// FOI MUITO DIFICIL!!!!!!!!!! consegui colocando o array fora das funções, pois quando estava dentro da func toda vez que eu iniciava o adicionar ele limpava meu array.
+// Foi bem dificil! Meu erro estava em colocar o array dentro da func adicionar...
 var array = []
 
 function adicionar() {
