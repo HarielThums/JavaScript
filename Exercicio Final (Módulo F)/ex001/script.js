@@ -7,7 +7,7 @@ function adicionar() {
 
     n = Number(numero.value)
 
-    if (numero.value <= 0 || numero.value >= 100 || array.indexOf(n) != -1) {
+    if (numero.value <= 0 || numero.value > 100 || array.indexOf(n) != -1) {
         alert('Número inválido!');
     } else { 
         let item = document.createElement('option')
