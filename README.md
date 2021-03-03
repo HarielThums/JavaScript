@@ -1,9 +1,11 @@
 # JavaScript
 
 Código do certificado:: 29FA0-6C61-A
-https://www.cursoemvideo.com/validacao-de-certificado/?codigo=29FA0-6C61-A
 
-Quais são os meus próximos passos?
+[Link para Validar Certificado](https://www.cursoemvideo.com/validacao-de-certificado/?codigo=29FA0-6C61-A)
+
+
+## Quais são os meus próximos passos?
 - Curso de HTML5 + CSS3
 - Estudar mais
 	- [Digital Innovation One - ES6](https://web.digitalinnovation.one/course/javascript-es6-essencial/learning/183aad79-0e6d-4acb-880f-b0e179824a81/)
