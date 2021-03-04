@@ -1,26 +1,14 @@
-// Aqui temos o exemplo de como fazer a requisição e entrada
-// do http usando o Express.
+var app = require('./config/server');
 
-var express = require('express');
-var app = express();
+var rotaHome = require('./app/routes/home');
+rotaHome(app);
 
-app.set('view engine', 'ejs');
+var rotaNoticias = require('./app/routes/noticias');
+rotaNoticias(app);
 
-app.get('/', function (req, resp) {
-    resp.send("<html><body>Portal de noticias.</body></html>")
-});
-
-app.get('/tecnologia', function (req, res) {
-    res.render("secao/tecnologia")
-});
-
-// agora passares a utilizar render, ao inves de send, por termos incluido
-// o EJS.
-// app.get('/tecnologia', function (req, res) {
-//     res.send("<html><body>Noticias de tecnologia.</body></html>")
-// });
-
+var rotaFormulario_inclusao_noticia = require('./app/routes/formulario_inclusao_noticias');
+rotaFormulario_inclusao_noticia(app);
 
 app.listen(3000, function(){
     console.log('Servidor rodando com Express');
-});
+})
