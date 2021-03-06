@@ -1,7 +1,7 @@
 # JavaScript
 
-Código do certificado: 29FA0-6C61-A
-
+## JavaScript - Curso em vídeo.
+- Código do certificado: 29FA0-6C61-A
 [Link para Validar Certificado](https://www.cursoemvideo.com/validacao-de-certificado/?codigo=29FA0-6C61-A)
 
 
