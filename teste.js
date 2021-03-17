@@ -22,7 +22,8 @@ const dadosjira = [
 ]
 
 const arquivoJson = json => JSON.parse(json)
-const recebendodados = dadosjira.map(arquivoJson)
+const getId = dados => dados.id
+// const recebendodados = dadosjira.map(getId)
+// const recebendodadostratados = recebendodados.map(getId)
 
-
-console.log(recebendodados)
+console.log(dadosjira.map(arquivoJson))
