@@ -19,6 +19,7 @@
 		- [x] Factory
 - [x] Estudar Objetos 
 - [x] Estudar Arrays
+- [x] JSON
 - [ ] Modularização
 - [ ] RegEx ( Expressões regulares )
 - [ ] jSON ( Estrutura de objetos / salvar dados automaticamente )
