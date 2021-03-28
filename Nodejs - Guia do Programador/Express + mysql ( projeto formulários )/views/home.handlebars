@@ -1,0 +1,12 @@
+<h1>Lista de posts cadastrados no BD: </h1>
+<hr><br><br><br>
+
+{{#each posts}}
+    <small>{{dataValues.createdAt}}</small>
+    
+    <h1>{{dataValues.titulo }}</h1>
+    <p>{{dataValues.conteudo}}</p>
+    <a href="/deletar/{{dataValues.id}}"><button>Deletar</button></a>
+    
+    <hr
+{{/each}}
