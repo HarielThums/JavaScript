@@ -20,10 +20,9 @@
 		- [x] Factory
 - [x] Estudar Objetos 
 - [x] Estudar Arrays
-- [x] JSON
+- [x] JSON ( Estrutura de objetos / salvar dados automaticamente )
 - [ ] Modularização
 - [ ] RegEx ( Expressões regulares )
-- [ ] jSON ( Estrutura de objetos / salvar dados automaticamente )
 - [ ] AjAX ( Carregamento automático das páginas )
 - [ ] NodejS ( Back-end ) 
 	- [x] [Curso de NodeJS](https://www.youtube.com/playlist?list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B)
