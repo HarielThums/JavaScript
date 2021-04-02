@@ -32,7 +32,11 @@ const flash = require('connect-flash')
         app.set('view engine', 'handlebars')
     //mongoose
         mongoose.Promise = global.Promise
-        mongoose.connect('mongodb://localhost/blogApp')
+        mongoose.connect('mongodb://localhost/blogApp', { 
+            useNewUrlParser:true, 
+            useUnifiedTopology: true,
+            useFindAndModify: false
+        })
         .then(() => console.log('DB connected!'))
         .catch(e => console.log(`DB error: ${e}`))
     //public
