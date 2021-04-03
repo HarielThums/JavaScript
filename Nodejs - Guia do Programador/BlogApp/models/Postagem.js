@@ -20,7 +20,7 @@ const Postagem = new Schema({
     },
     categoria: {
         type: Schema.Types.ObjectId,
-        ref: 'categorias',
+        ref: 'Categorias',
         required: true
     },
     data: {
@@ -29,4 +29,4 @@ const Postagem = new Schema({
     }
 })
 
-mongoose.model('postagens', Postagem)
+mongoose.model('Postagens', Postagem)

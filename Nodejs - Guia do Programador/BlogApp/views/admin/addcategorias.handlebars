@@ -18,3 +18,14 @@
     </form>
     </div>
 </div>
+
+{{!-- Script para alerta de erros --}}
+<script>
+    let alerta = document.getElementsByClassName('alert')[0]
+
+    if(alerta) {
+        setTimeout(() => {
+            alerta.style.display = 'none';
+        }, 3000)
+    }
+</script>

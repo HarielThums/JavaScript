@@ -1,3 +1,31 @@
 <h2>Lista de postagens: </h2>
 <hr>
 <a href="/admin/postagens/add"><button class="btn btn-success">Nova postagem</button></a>
+{{#each postagens}}
+    <div class="card mt-2">
+        <div class="card-body">
+            <h4 class="">{{titulo}}</h4>
+            <p class="">Descrição: {{descrição}}</p>
+            <p>Conteudo: {{conteudo}}</p>
+            <small>Data: {{data}}</small>
+            <br>
+            <small>Categoria: {{categoria.nome}}</small> 
+            <br>
+            <a href="/admin/postagens/edit/{{_id}}"><button class="btn btn-success mt-3">Editar postagem</button></a>
+        </div>
+    </div>
+{{else}}
+    <h5>Nenhuma postagem cadastrada.</h5>
+{{/each}}
+
+
+{{!-- Script para alerta de erros --}}
+<script>
+    let alerta = document.getElementsByClassName('alert')[0]
+
+    if(alerta) {
+        setTimeout(() => {
+            alerta.style.display = 'none';
+        }, 3000)
+    }
+</script>
