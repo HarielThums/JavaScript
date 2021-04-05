@@ -112,8 +112,8 @@ router.get('/postagens', (req,res) => {
 
 router.get('/postagens/add', (req,res) =>{
     Categoria.find().lean()
-    .then(categoria => {
-        res.render('admin/addpostagem', {categoria: categoria})
+    .then(categorias => {
+        res.render('admin/addpostagem', {categorias: categorias})
     })
     .catch(err => {
         res.flash('error_msg', 'Houve um erro ao carregar o formulário')
@@ -180,20 +180,31 @@ router.post('/postagens/edit', (req,res) => {
 
         postagens.save()
         .then(() => {
-            req.flash('success_msg', '')
+            req.flash('success_msg', 'Postagem editada com sucesso!')
             res.redirect('/admin/postagens')
         })
         .catch(err => {
-            req.flash('error_msg', err)
+            req.flash('error_msg', 'Houve um erro ao editar a postagem!')
             res.redirect('/admin/postagens')
         })
     })
     .catch(err => {
         console.log(err)
-        req.flash('error_msg', err)
+        req.flash('error_msg', 'Erro no processo de edição!')
         res.redirect('/admin/postagens')
     })
 })
 
+router.post('/postagens/deletar', (req,res) => {
+    Postagem.remove({_id: req.body.id})
+    .then(() => {
+        req.flash('success_msg', 'Postagem deletada com sucesso!')
+        res.redirect('/admin/postagens')
+    })
+    .catch(err => {
+        req.flash('error_msg', 'Houve um erro ao deletar a postagem!')
+        res.redirect('/admin/postagens')
+    })
+})
 
 module.exports = router

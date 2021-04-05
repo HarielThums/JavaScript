@@ -3,7 +3,6 @@
 {{else}}
 
 {{/each}}
-{{categoria}}
 <h3>Editar Categoria: </h3>
 <div class="card">
     <div class="card-body">
@@ -11,9 +10,9 @@
     <input type="hidden" name="id" value="{{categoria._id}}">
 
     <label for="nome">Nome: </label>
-    <input type="text" name="nome" id="nome" placeholder="Nome da categoria" class="form-control" value="{{categoria.nome}}"> 
+    <input type="text" name="nome" id="nome" placeholder="Nome da categoria" class="form-control" value="{{categoria.nome}}" required> 
     <label for="slug" class="mt-2">Slug: </label>
-    <input type="text" name="slug" id="slug" placeholder="Slug da categoria" class="form-control " value="{{categoria.slug}}">
+    <input type="text" name="slug" id="slug" placeholder="Slug da categoria" class="form-control " value="{{categoria.slug}}" required>
     <button type="submit" class="btn btn-success mt-4">Editar categoria</button>
 
     </form>
