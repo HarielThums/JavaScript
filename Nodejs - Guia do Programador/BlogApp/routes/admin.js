@@ -6,7 +6,6 @@ require('../models/Postagem')
 const Postagem = mongoose.model('Postagens')
 const Categoria = mongoose.model('Categorias')
 const {eAdmin} = require('../helpers/eAdmin')
-const { routes } = require('../server/server')
 
 
 // Router
