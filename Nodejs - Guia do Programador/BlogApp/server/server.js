@@ -6,6 +6,7 @@ const app = express()
 const path = require('path')
 const session = require('express-session')
 const flash = require('connect-flash')
+const passport = require('passport')
 
 // config
     // app.use() sempre será usado para configurar um middleware!
@@ -15,6 +16,9 @@ const flash = require('connect-flash')
             resave: true,
             saveUninitialized: true
         }))
+    //Passport * importante qu el esteja entre a session e o flash * 
+        app.use(passport.initialize())
+        app.use(passport.session())
     //flash
         app.use(flash())
     //middleware
@@ -22,6 +26,8 @@ const flash = require('connect-flash')
             // res.locals esse comando serve para criar variaveis globais, que podem ser acessads em qualquer local do projeto!
             res.locals.success_msg = req.flash('success_msg')
             res.locals.error_msg = req.flash('error_msg')
+            res.locals.error = req.flash('error')
+            res.locals.user = req.user || null // armazenando dados do user logado
             next() // sempre tem que existir um next no fim de uma middleware
         })
     //body parser
