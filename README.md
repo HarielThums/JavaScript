@@ -3,7 +3,8 @@
 ### Projetos para estudo:
 - [x] BlogApp, [clique aqui](https://github.com/HarielThums/JavaScript/tree/main/Nodejs%20-%20Guia%20do%20Programador/BlogApp)
 	- Node.js, Express, MongoDB, Passport, Bootstrap;
-
+- [x] API Node.js, [clique aqui](https://github.com/HarielThums/APIRest-NodeJS)
+	- Node.js, MongoDB, JWT, nodemailer;
 
 ## Quais são os meus próximos passos?
 ![[]](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![[]](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![[]](https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge)
