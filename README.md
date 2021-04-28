@@ -13,7 +13,7 @@
 
 - [x] [Curso de Web Moderno](https://www.udemy.com/course/curso-web/)
 - [ ] Curso de HTML5 + CSS3
-- [ ] Estudar mais JavaScript
+- [x] Estudar mais JavaScript
 	- [ ] [Digital Innovation One - ES6](https://web.digitalinnovation.one/course/javascript-es6-essencial/learning/183aad79-0e6d-4acb-880f-b0e179824a81/)
 	- [x] functions
 		- [x] Arrow function
@@ -27,9 +27,8 @@
 - [ ] Modularização
 - [ ] RegEx ( Expressões regulares )
 - [ ] AjAX ( Carregamento automático das páginas )
-- [ ] NodejS ( Back-end ) 
+- [x] NodejS ( Back-end ) 
 	- [x] [Curso de NodeJS](https://www.youtube.com/playlist?list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B)
-	- [ ] Curso NodejS udemy
 - [ ] VuejS / Angular / React
 
 ### Certificações:
