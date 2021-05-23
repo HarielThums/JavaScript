@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <h1>Exercicios HTML</h1>
+    </header>
+    <nav>
+        <a href="exercicios/teste.html">00 - Teste |</a>
+        <a href="exercicios/texto01.html">01 - Exercicio |</a>
+        <a href="exercicios/listas.html">02 - Exercicio |</a>
+    </nav>
+    <section id="conteudo"></section>
+    <footer class="container">
+        Curso de Web moderno.
+    </footer>
+    <script>
+        // requisição ajax para reenderizar outras paginas no campo conteudo da home,
+        document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = e => {
+                e.preventDefault() // preventdefault permite executar algo antes do que era previsto pelo navegador.
+                fetch(link.href) // requisição ajax usando link do foreach
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html) // html é repassado para a section conteudo
+            }
+        })
+    </script>
+</body>
+</html>
