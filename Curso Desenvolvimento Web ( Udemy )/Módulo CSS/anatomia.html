@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        /* Div */
+        .selector {
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            border: solid 3px black;
+            font-family: helvetica, sans-serif;
+
+            /* funções css */
+            width: calc(100% - 100px);
+            background-color: rgb(30, 150, 180);
+        }
+
+        /* pseudo classe, hover é aplicado quando o mouse passa pela área*/
+        .selector:hover {
+            background-color: red;
+        } 
+
+        /* pseudo elementos, mudando a primeira letra da div*/
+        .selector::first-letter{
+            font-size: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="selector">Conteúdo</div>
+</body>
+
+</html>
