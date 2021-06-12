@@ -24,3 +24,4 @@ var countChars = function (word) {
 };
 
 countChars("Programming");
+countChars("AutoComplete");
