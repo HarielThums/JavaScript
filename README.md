@@ -29,11 +29,11 @@
 - [x] Estudar Arrays
 - [x] JSON ( Estrutura de objetos / salvar dados automaticamente )
 - [ ] Modularização
-- [ ] RegEx ( Expressões regulares )
+- [x] RegEx ( Expressões regulares )
 - [ ] AjAX ( Carregamento automático das páginas )
 - [x] NodejS ( Back-end ) 
 	- [x] [Curso de NodeJS](https://www.youtube.com/playlist?list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B)
-- [ ] VuejS / Angular / React
+- [x] Angular / React - básico
 
 ### Certificações:
 
